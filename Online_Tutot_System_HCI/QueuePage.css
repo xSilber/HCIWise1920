@@ -3,6 +3,19 @@ body{
 	background-color: #EFEFFB;	
 }
 
+.btn {
+  text-align: center;
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  bottom: 15%;
+  left: 45%;
+}
+
 #title {
 	font-size: 60px;
 	color: red;
