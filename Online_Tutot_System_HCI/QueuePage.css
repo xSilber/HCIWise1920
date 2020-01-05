@@ -1,0 +1,26 @@
+
+body{
+	background-color: #EFEFFB;	
+}
+
+#title {
+	font-size: 60px;
+	color: red;
+	text-align: center;
+}
+
+#text {
+	font-size: 20px;
+	color: red;
+	text-align: center;
+	margin-top: 10px;
+	margin-bot: 50px;
+	
+}
+
+#intext {
+	font-size: 50px;
+	margin-left: 20px;
+	margin-top: 50px;
+	text-align: center;
+}

@@ -1,0 +1,63 @@
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.css"> 
+<link href="ChatPage.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat- Window</title>
+	
+	<script>
+			$(function() {
+             $("#my-dropzone").dropzone({
+              url: "/file/post",
+             });
+
+          });
+   </script>
+  </head>
+  <body <body onload="function()">
+    <!-- Sichtbarer Dokumentinhalt im body -->
+	
+	<h1 id="textin"> You are currently chatting with a tutor: </h1>
+	
+	 <div style="text-align:right;" style="border:thin">
+       <button class="btn"><i class="fa fa-download"></i> Voice- Chat</button> <br>
+       <button class="btnsec"><i class="fa fa-download"></i> Screensharing</button> <br>
+     </div>
+	
+	
+	
+
+  
+        <div class="col-sm-3 col-sm-offset-4 frame">
+            <ul></ul>
+            <div>
+                <div class="msj-rta macro">                        
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <input class="mytext" placeholder="Type a message"/>
+                    </div> 
+
+                </div>               
+            </div>
+        </div> 
+
+	
+	
+    <form action="/file-upload" class="dropzone dz-clickable" id="my-dropzone">
+          <div class="dz-message d-flex flex-column">
+            <i class="material-icons text-muted">File Upload</i>
+            Drag &amp; Drop here or click
+          </div>
+        </form>
+	
+	 <button onclick="location.href = 'MainPage.html';" class="DisconnectButton" style="float: left;><i class="fa fa-download"></i>Disconnect</button>
+	 <button  class="ManageButton" style="float: right;><i class="fa fa-download"></i>Manage</button>
+	
+  </body>
+</html>
